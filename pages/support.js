@@ -3,36 +3,18 @@ import Head from 'next/head';
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Desert Dove</title>
+      <title>Desert Dove: support</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
-      <h1 className="title">
-        Welcome to <a href="https://desertdove.org">Desert Dove.</a>
-      </h1>
+      <h1 className="title">Support us...</h1>
 
-      <p className="description">Church, etc. and so forth...</p>
+      <p className="description">Online, etc. and so forth...</p>
 
       <div className="grid">
         <a href="support" className="card">
-          <h3>Support &rarr;</h3>
-          <p>Support us.</p>
-        </a>
-
-        <a href="support" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn more.</p>
-        </a>
-
-        <a href="support" className="card">
-          <h3>Contact &rarr;</h3>
-          <p>Contact...</p>
-        </a>
-
-        <a href="support" className="card">
-          <h3>Stuff &rarr;</h3>
-          <p>Stuff...</p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9HFoyR-kOgvOsgm5WUNN5NU_m_CyYdS0BWPVWvcfFn7OUdwLm" />
         </a>
       </div>
     </main>
