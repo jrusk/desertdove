@@ -2,33 +2,48 @@ import Head from 'next/head';
 
 import Layout from '../components/layout';
 
-const Home = () => (
-  <Layout>
-    <p className="description">Church, etc. and so forth...</p>
+export default () => (
+  <Layout title="Contact" hero="Contact">
+    <p className="description">Contact info and so forth...</p>
 
     <div className="grid">
-      <a href="support" className="card">
-        <h3>Support &rarr;</h3>
-        <p>Support us.</p>
-      </a>
-
-      <a href="contact" className="card">
-        <h3>Learn &rarr;</h3>
-        <p>Learn more.</p>
-      </a>
-
-      <a href="contact" className="card">
-        <h3>Contact &rarr;</h3>
-        <p>Contact...</p>
-      </a>
-
-      <a href="contact" className="card">
-        <h3>Stuff &rarr;</h3>
-        <p>Stuff...</p>
+      <a href="https://www.facebook.com/johnleon.rusk" className="card">
+        <img src="finduson_facebook.png" />
       </a>
     </div>
 
     <style jsx>{`
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        width: 180px;
+      }
+
+      .title a {
+        color: #0070f3;
+        text-decoration: none;
+      }
+
+      .title a:hover,
+      .title a:focus,
+      .title a:active {
+        text-decoration: underline;
+      }
+
+      .title {
+        margin: 0;
+        line-height: 1.15;
+        font-size: 4rem;
+      }
+
+      .title,
+      .description {
+        text-align: center;
+      }
+
       .description {
         line-height: 1.5;
         font-size: 1.5rem;
@@ -83,5 +98,3 @@ const Home = () => (
     `}</style>
   </Layout>
 );
-
-export default Home;

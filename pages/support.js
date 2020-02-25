@@ -1,66 +1,18 @@
 import Head from 'next/head';
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Desert Dove: support</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+import Layout from '../components/layout';
 
-    <main>
-      <h1 className="title">Support us...</h1>
+export default () => (
+  <Layout title="Support" hero="Suport us...">
+    <p className="description">Online, etc. and so forth...</p>
 
-      <p className="description">Online, etc. and so forth...</p>
-
-      <div className="grid">
-        <a href="support" className="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9HFoyR-kOgvOsgm5WUNN5NU_m_CyYdS0BWPVWvcfFn7OUdwLm" />
-        </a>
-      </div>
-    </main>
-
-    <footer>
-      <a href="https://desertdove.org">Desert Dove</a>
-    </footer>
+    <div className="grid">
+      <a href="support" className="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9HFoyR-kOgvOsgm5WUNN5NU_m_CyYdS0BWPVWvcfFn7OUdwLm" />
+      </a>
+    </div>
 
     <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
       a {
         color: inherit;
         text-decoration: none;
@@ -91,15 +43,6 @@ const Home = () => (
       .description {
         line-height: 1.5;
         font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
 
       .grid {
@@ -149,21 +92,5 @@ const Home = () => (
         }
       }
     `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
+  </Layout>
 );
-
-export default Home;
