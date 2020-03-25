@@ -1,65 +1,41 @@
-import Head from 'next/head';
-
-import Layout from '../components/layout';
+import StandardComponent from '../components/component';
 
 export default () => (
-  <Layout title="Support" hero="Suport us...">
-    <p className="description">Online, etc. and so forth...</p>
-
-    <div className="grid">
-      <a href="support" className="card">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick" />
-<input type="hidden" name="hosted_button_id" value="JUBNREC2FR3V4" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-      </a>
+  <StandardComponent
+    description="You can send checks or pay online using the PayPal Donate button below."
+    title="Support"
+    hero="Suport us">
+    <div className="card" style={{ width: '400px' }}>
+      <h3>Pay online with PayPal</h3>
+      <br />
+      <form
+        action="https://www.paypal.com/cgi-bin/webscr"
+        method="post"
+        target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="JUBNREC2FR3V4" />
+        <input
+          type="image"
+          src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+          border="0"
+          name="submit"
+          title="PayPal - The safer, easier way to pay online!"
+          alt="Donate with PayPal button"
+        />
+      </form>
+    </div>
+    <div className="card" style={{ width: '400px' }}>
+      <h3>Mailing Address</h3>
+      <p>1302 Goodnight Trail</p>
+      <p>Fritch, TX 79036</p>
+      <p>United States</p>
+      <br />
+      <small>Make checks payable to Desert Dove</small>
     </div>
 
+    <img src="monsoon.jpg" />
+
     <style jsx>{`
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
       .card {
         margin: 1rem;
         flex-basis: 45%;
@@ -70,13 +46,6 @@ export default () => (
         border: 1px solid #eaeaea;
         border-radius: 10px;
         transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
       }
 
       .card h3 {
@@ -90,12 +59,9 @@ export default () => (
         line-height: 1.5;
       }
 
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
+      img {
+        width: 90%;
       }
     `}</style>
-  </Layout>
+  </StandardComponent>
 );

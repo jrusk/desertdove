@@ -1,11 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-export default ({
-  children,
-  title = 'Desert Dove',
-  hero = 'Welcome to Desert Dove.',
-}) => {
+export default ({ children, title, hero }) => {
   const dt = new Date();
   const year = dt.getFullYear();
   return (
@@ -32,14 +28,6 @@ export default ({
           &nbsp;|&nbsp;
           <Link href="/contact">
             <a>Contact</a>
-          </Link>
-          &nbsp;|&nbsp;
-          <Link href="/contact">
-            <a>Learn</a>
-          </Link>
-          &nbsp;|&nbsp;
-          <Link href="/contact">
-            <a>Stuff</a>
           </Link>
         </div>
         <div className="center">
@@ -87,6 +75,7 @@ export default ({
           min-height: 150px;
           border-top: 1px solid #eaeaea;
           display: flex;
+          color: white;
           justify-content: center;
           align-items: center;
           background: url(/background.jpg) center no-repeat;

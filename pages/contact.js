@@ -1,64 +1,14 @@
-import Head from 'next/head';
-
-import Layout from '../components/layout';
+import StandardComponent from '../components/component';
 
 export default () => (
-  <Layout title="Contact" hero="Contact">
-    <p className="description">Contact info and so forth...</p>
+  <StandardComponent title="Support" hero="Contact info" description="">
+    <a href="https://www.facebook.com/johnleon.rusk" className="card">
+      <img src="finduson_facebook.png" />
+    </a>
 
-    <div className="grid">
-      <a href="https://www.facebook.com/johnleon.rusk" className="card">
-        <img src="finduson_facebook.png" />
-      </a>
-    </div>
+    <img src="storm.jpg" />
 
     <style jsx>{`
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      img {
-        width: 180px;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
       .card {
         margin: 1rem;
         flex-basis: 45%;
@@ -89,12 +39,13 @@ export default () => (
         line-height: 1.5;
       }
 
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
+      .card img {
+        width: 300px;
+      }
+
+      img {
+        width: 90%;
       }
     `}</style>
-  </Layout>
+  </StandardComponent>
 );

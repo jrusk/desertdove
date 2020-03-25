@@ -1,47 +1,28 @@
-import Head from 'next/head';
-
-import Layout from '../components/layout';
+import StandardComponent from '../components/component';
 
 const Home = () => (
-  <Layout>
-    <p className="description">Church, etc. and so forth...</p>
+  <StandardComponent description="Christian Church and Mission">
+    <main>
+      Planning missions to, prayer for, explorations of South Africa, Namibia,
+      Wales, Malaysia...
+    </main>
 
-    <div className="grid">
-      <a href="support" className="card">
-        <h3>Support &rarr;</h3>
-        <p>Support us.</p>
-      </a>
+    <a href="support" className="card">
+      <h3>Support &rarr;</h3>
+      <p>Online donations</p>
+      <img src="moonscape.jpg" />
+    </a>
 
-      <a href="contact" className="card">
-        <h3>Learn &rarr;</h3>
-        <p>Learn more.</p>
-      </a>
-
-      <a href="contact" className="card">
-        <h3>Contact &rarr;</h3>
-        <p>Contact...</p>
-      </a>
-
-      <a href="contact" className="card">
-        <h3>Stuff &rarr;</h3>
-        <p>Stuff...</p>
-      </a>
-    </div>
+    <a href="contact" className="card">
+      <h3>Contact &rarr;</h3>
+      <p>Contact information</p>
+      <img src="dune_cycles.jpg" />
+    </a>
 
     <style jsx>{`
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      .grid {
-        display: flex;
+      main {
+        width: 85%;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
       }
 
       .card {
@@ -74,14 +55,11 @@ const Home = () => (
         line-height: 1.5;
       }
 
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
+      .card img {
+        width: 300px;
       }
     `}</style>
-  </Layout>
+  </StandardComponent>
 );
 
 export default Home;
