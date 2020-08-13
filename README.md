@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+This is the website for [Desert Dove](https://desertdove.org) built with [Next.js](https://nextjs.org/).
 
 ## Getting Started
 

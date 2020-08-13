@@ -1,10 +1,11 @@
-import StandardComponent from '../components/component';
+import StandardComponent from "../components/component";
 
-export default () => (
+const Thankyou = () => (
   <StandardComponent
     title="Thank you"
     hero="Thank you"
-    description="Thank you for donating!">
+    description="Thank you for donating!"
+  >
     <a href="https://www.facebook.com/johnleon.rusk" className="card">
       <img src="finduson_facebook.png" />
     </a>
@@ -52,3 +53,5 @@ export default () => (
     `}</style>
   </StandardComponent>
 );
+
+export default Thankyou;

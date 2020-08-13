@@ -1,6 +1,6 @@
-import StandardComponent from '../components/component';
+import StandardComponent from "../components/component";
 
-export default () => (
+const Contact = () => (
   <StandardComponent title="Support" hero="Contact info" description="">
     <a href="https://www.facebook.com/johnleon.rusk" className="card">
       <img src="finduson_facebook.png" />
@@ -49,3 +49,5 @@ export default () => (
     `}</style>
   </StandardComponent>
 );
+
+export default Contact;

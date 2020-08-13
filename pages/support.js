@@ -1,17 +1,19 @@
-import StandardComponent from '../components/component';
+import StandardComponent from "../components/component";
 
-export default () => (
+const Support = () => (
   <StandardComponent
     description="You can send checks or pay online using the PayPal Donate button below."
     title="Support"
-    hero="Suport us">
-    <div className="card" style={{ width: '400px' }}>
+    hero="Suport us"
+  >
+    <div className="card" style={{ width: "400px" }}>
       <h3>Pay online with PayPal</h3>
       <br />
       <form
         action="https://www.paypal.com/cgi-bin/webscr"
         method="post"
-        target="_top">
+        target="_top"
+      >
         <input type="hidden" name="cmd" value="_s-xclick" />
         <input type="hidden" name="hosted_button_id" value="JUBNREC2FR3V4" />
         <input
@@ -24,7 +26,7 @@ export default () => (
         />
       </form>
     </div>
-    <div className="card" style={{ width: '400px' }}>
+    <div className="card" style={{ width: "400px" }}>
       <h3>Mailing Address</h3>
       <p>1302 Goodnight Trail</p>
       <p>Fritch, TX 79036</p>
@@ -65,3 +67,5 @@ export default () => (
     `}</style>
   </StandardComponent>
 );
+
+export default Support;

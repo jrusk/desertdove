@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
 
-export default ({ children, title, hero }) => {
+const Layout = ({ children, title, hero }) => {
   const dt = new Date();
   const year = dt.getFullYear();
   return (
@@ -32,7 +32,7 @@ export default ({ children, title, hero }) => {
         </div>
         <div className="center">
           <small>
-            Copyright &copy; {year + ' '}
+            Copyright &copy; {year + " "}
             <a href="https://desertdove.org">Desert Dove</a>. All rights
             reserved.
           </small>
@@ -117,3 +117,5 @@ export default ({ children, title, hero }) => {
     </div>
   );
 };
+
+export default Layout;
