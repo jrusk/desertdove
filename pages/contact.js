@@ -1,12 +1,18 @@
 import StandardComponent from "../components/component";
+import Image from "next/image";
 
 const Contact = () => (
   <StandardComponent title="Support" hero="Contact info" description="">
     <a href="https://www.facebook.com/johnleon.rusk" className="card">
-      <img src="finduson_facebook.png" />
+      <Image
+        src="/finduson_facebook.png"
+        alt="Facebook logo"
+        width="436"
+        height="81"
+      />
     </a>
 
-    <img src="storm.jpg" />
+    <Image src="/storm.jpg" alt="Storm photo" width="800" height="600" />
 
     <style jsx>{`
       .card {
@@ -37,14 +43,6 @@ const Contact = () => (
         margin: 0;
         font-size: 1.25rem;
         line-height: 1.5;
-      }
-
-      .card img {
-        width: 300px;
-      }
-
-      img {
-        width: 90%;
       }
     `}</style>
   </StandardComponent>

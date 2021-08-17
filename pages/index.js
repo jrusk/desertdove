@@ -1,4 +1,5 @@
-import StandardComponent from '../components/component';
+import StandardComponent from "../components/component";
+import Image from "next/image";
 
 const Home = () => (
   <StandardComponent description="Christian Church and Mission">
@@ -10,13 +11,23 @@ const Home = () => (
     <a href="support" className="card">
       <h3>Support &rarr;</h3>
       <p>Online donations</p>
-      <img src="moonscape.jpg" />
+      <Image
+        src="/moonscape.jpg"
+        alt="Moonscape photo"
+        width="300"
+        height="200"
+      />
     </a>
 
     <a href="contact" className="card">
       <h3>Contact &rarr;</h3>
       <p>Contact information</p>
-      <img src="dune_cycles.jpg" />
+      <Image
+        src="/dune_cycles.jpg"
+        alt="Dune with bicycles photo"
+        width="300"
+        height="200"
+      />
     </a>
 
     <style jsx>{`
@@ -53,10 +64,6 @@ const Home = () => (
         margin: 0;
         font-size: 1.25rem;
         line-height: 1.5;
-      }
-
-      .card img {
-        width: 300px;
       }
     `}</style>
   </StandardComponent>

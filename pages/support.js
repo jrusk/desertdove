@@ -1,4 +1,5 @@
 import StandardComponent from "../components/component";
+import Image from "next/image";
 
 const Support = () => (
   <StandardComponent
@@ -35,7 +36,7 @@ const Support = () => (
       <small>Make checks payable to Desert Dove</small>
     </div>
 
-    <img src="monsoon.jpg" />
+    <Image src="/monsoon.jpg" alt="Monsoon photo" width="800" height="600" />
 
     <style jsx>{`
       .card {
@@ -59,10 +60,6 @@ const Support = () => (
         margin: 0;
         font-size: 1.25rem;
         line-height: 1.5;
-      }
-
-      img {
-        width: 90%;
       }
     `}</style>
   </StandardComponent>
