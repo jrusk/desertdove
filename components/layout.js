@@ -18,15 +18,15 @@ const Layout = ({ children, title, hero }) => {
 
       <footer>
         <div className="center">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a>Home</a>
           </Link>
           &nbsp;|&nbsp;
-          <Link href="/support">
+          <Link href="/support" legacyBehavior>
             <a>Support</a>
           </Link>
           &nbsp;|&nbsp;
-          <Link href="/contact">
+          <Link href="/contact" legacyBehavior>
             <a>Contact</a>
           </Link>
         </div>
